@@ -17,7 +17,7 @@ Departments     Procurement, Website, Finance, Sales, HR
 ### Problem 1: 
 - Two Separate Datasets Could Not Be Analyzed Together
 ### Situation: 
--The raw data came in two separate columns within the same sheet — NZ staff on the left, IND staff on the right — with no shared structure. This made cross-country analysis impossible.
+- The raw data came in two separate columns within the same sheet — NZ staff on the left, IND staff on the right — with no shared structure. This made cross-country analysis impossible.
 ### Problem: 
 You cannot run pivot tables, filters, or aggregations across a side-by-side layout. Excel treats them as unrelated ranges.
 Solution: Used Power Query to unpivot and stack both tables into a single unified dataset (StaffData sheet) with a Country column added to distinguish the source. This is the correct normalization approach — every row represents one employee, every column one attribute.
@@ -25,13 +25,13 @@ Solution: Used Power Query to unpivot and stack both tables into a single unifie
 
 ### Problem 2: Missing Gender Values (8 Records)
 ### Situation: 
--8 employees had no Gender entry — roughly 4.3% of the dataset.
+- 8 employees had no Gender entry — roughly 4.3% of the dataset.
 ### Problem: 
 Ignoring this silently skews gender ratio calculations. Dropping rows loses legitimate salary and department data.
 ### Solution: 
 Introduced an "Other" category rather than imputing or dropping. This preserves the data while making the gap transparent.
 ## Outcome:
--Gender         Count
--Male           90
--Female         86
--Other / Blank  8
+- Gender         Count
+- Male           90
+- Female         86
+- Other / Blank  8
