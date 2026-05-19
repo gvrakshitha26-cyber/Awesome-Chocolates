@@ -35,3 +35,8 @@ Introduced an "Other" category rather than imputing or dropping. This preserves 
 - Male           90
 - Female         86
 - Other / Blank  8
+
+## Analysis :
+- 1 The number of unique staff memebers in India is bigger compared to New Zealand Staff member.
+- 2 Female ration is higher in India, meaning number of female staff is slighty higher in India compared to New Zealand
+- 3 Average Salary is slighly higher for New Zealand staff.
